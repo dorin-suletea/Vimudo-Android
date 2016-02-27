@@ -1,0 +1,12 @@
+<com.dsu.next.mush.ui.SlidingFrameLayout
+    style="@style/fragment_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/logo_with"
+        android:layout_height="@dimen/logo_height"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+</com.dsu.next.mush.ui.SlidingFrameLayout>

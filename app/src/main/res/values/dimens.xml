@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="logo_with">200dp</dimen>
+    <dimen name="logo_height">100dp</dimen>
+
+    <dimen name="text_field_font_size">20dp</dimen>
+    <dimen name="text_field_horizontal_padding">10dp</dimen>
+
+    <dimen name="main_box_horizontal_margin">20dp</dimen>
+    <dimen name="main_box_layout_height">25dp</dimen>
+    <dimen name="main_box_paste_btn_w_h">25dp</dimen>
+
+    <dimen name="main_box_go_btn_margin_top">10dp</dimen>
+    <dimen name="main_box_go_btn_w">200dp</dimen>
+    <dimen name="main_box_go_btn_h">50dp</dimen>
+
+    <dimen name="info_song_meta_layout_margin_top">50dp</dimen>
+    <dimen name="info_song_meta_song_artist_box_margin_top">20dp</dimen>
+
+    <dimen name="info_link_box_margin_top">40dp</dimen>
+    <dimen name="info_link_box_margin_bot">40dp</dimen>
+</resources>

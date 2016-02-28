@@ -31,7 +31,7 @@ public class LinkListAdapter extends ArrayAdapter<String> {
 
         View rowView;
         if (convertView == null) {
-            rowView = inflater.inflate(R.layout.row_converted_link, parent, false);
+            rowView = inflater.inflate(R.layout.x_link_row, parent, false);
         } else {
             rowView = convertView;
         }

@@ -12,7 +12,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.a_activity);
 
         UiHelper.replaceCurrentFragment(this, new Bundle(), new SplashFragment(), false, false);
 

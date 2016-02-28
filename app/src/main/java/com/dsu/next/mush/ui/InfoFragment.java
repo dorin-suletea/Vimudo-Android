@@ -26,7 +26,7 @@ public class InfoFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.info_fragment, container, false);
+        return inflater.inflate(R.layout.c_info_fragment, container, false);
     }
 
     @Override
@@ -34,16 +34,16 @@ public class InfoFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         List<String> mockConvertedLinks = new ArrayList<>();
-        mockConvertedLinks.add("FFFFFFFFFF");
-        mockConvertedLinks.add("FFSFFSFDASASD");
-        mockConvertedLinks.add("FFFFFFFFFF");
-        mockConvertedLinks.add("FFSFFSFDASASD");
-        mockConvertedLinks.add("FFFFFFFFFF");
-        mockConvertedLinks.add("FFSFFSFDASASD");
-        mockConvertedLinks.add("FFFFFFFFFF");
-        mockConvertedLinks.add("FFSFFSFDASASD");
-        mockConvertedLinks.add("FFFFFFFFFF");
-        mockConvertedLinks.add("FFSFFSFDASASD");
+        mockConvertedLinks.add("https://www.youtube.com/watch?v=wPRNYGiQUOU");
+        mockConvertedLinks.add("https://www.youtube.com/watch?v=wPRNYGiQUOU");
+        mockConvertedLinks.add("https://www.youtube.com/watch?v=wPRNYGiQUOU");
+        mockConvertedLinks.add("https://www.youtube.com/watch?v=wPRNYGiQUOU");
+        mockConvertedLinks.add("https://www.youtube.com/watch?v=wPRNYGiQUOU");
+        mockConvertedLinks.add("https://www.youtube.com/watch?v=wPRNYGiQUOU");
+        mockConvertedLinks.add("https://www.youtube.com/watch?v=wPRNYGiQUOU");
+        mockConvertedLinks.add("https://www.youtube.com/watch?v=wPRNYGiQUOU");
+        mockConvertedLinks.add("https://www.youtube.com/watch?v=wPRNYGiQUOU");
+        mockConvertedLinks.add("https://www.youtube.com/watch?v=wPRNYGiQUOU");
 
         convertedLinkAdapter = new LinkListAdapter(this.getActivity(), mockConvertedLinks, new LinkListController());
         ListView convertedLinkListView = (ListView) view.findViewById(R.id.converted_link_list);

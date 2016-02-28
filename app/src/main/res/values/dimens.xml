@@ -7,6 +7,11 @@
     <dimen name="search_box_height">55dp</dimen>
     <dimen name="search_btn_size">30dp</dimen>
 
+    <!--Info fragment-->
+    <dimen name="link_row_height">40dp</dimen>
+    <dimen name="music_provider_logo_width">40dp</dimen>
+    <dimen name="music_provider_logo_height">40dp</dimen>
+
 
 
 
@@ -26,7 +31,6 @@
     <dimen name="main_box_go_btn_w">200dp</dimen>
     <dimen name="main_box_go_btn_h">50dp</dimen>
 
-    <dimen name="info_song_meta_layout_margin_top">50dp</dimen>
     <dimen name="info_song_meta_song_artist_box_margin_top">20dp</dimen>
 
     <dimen name="info_link_box_margin_top">40dp</dimen>

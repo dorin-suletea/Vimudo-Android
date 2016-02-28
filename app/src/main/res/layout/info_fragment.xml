@@ -30,15 +30,15 @@
         <!--ID Tab-->
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="@dimen/main_box_layout_height"
+            android:layout_height="@dimen/search_box_height"
             android:layout_marginTop="@dimen/info_link_box_margin_top"
             android:layout_marginBottom="@dimen/info_link_box_margin_bot"
-            android:layout_marginEnd="@dimen/main_box_horizontal_margin"
-            android:layout_marginStart="@dimen/main_box_horizontal_margin"
+            android:layout_marginEnd="@dimen/search_box_horizontal_margin"
+            android:layout_marginStart="@dimen/search_box_horizontal_margin"
             android:orientation="horizontal">
 
             <TextView
-                style="@style/home_text_box_style"
+                style="@style/search_box_style"
                 android:id="@+id/edit_message"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -49,8 +49,8 @@
 
 
             <Button
-                android:layout_width="@dimen/main_box_paste_btn_w_h"
-                android:layout_height="@dimen/main_box_paste_btn_w_h"
+                android:layout_width="@dimen/search_btn_size"
+                android:layout_height="@dimen/search_btn_size"
                 android:background="@drawable/share_icon"
                 android:gravity="center_vertical" />
         </LinearLayout>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MuSh.iml" filepath="$PROJECT_DIR$/MuSh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Vimudo.iml" filepath="$PROJECT_DIR$/Vimudo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

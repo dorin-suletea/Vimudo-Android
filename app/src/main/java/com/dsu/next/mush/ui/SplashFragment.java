@@ -17,7 +17,7 @@ public class SplashFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         loadHomeFragment();
-        return inflater.inflate(R.layout.splash_fragment, container, false);
+        return inflater.inflate(R.layout.a_splash_fragment, container, false);
     }
 
     private void loadHomeFragment() {

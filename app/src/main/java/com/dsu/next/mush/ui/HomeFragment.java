@@ -1,6 +1,5 @@
 package com.dsu.next.mush.ui;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,7 +12,7 @@ import com.dsu.next.mush.ui.controllers.HomeFragmentController;
 
 public class HomeFragment extends Fragment {
     private HomeFragmentController controller;
-    private Button goButton;
+    private Button searchButton;
 
     public HomeFragment() {
 
@@ -21,7 +20,7 @@ public class HomeFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.home_fragment, container, false);
+        return inflater.inflate(R.layout.b_search_fragment, container, false);
     }
 
     @Override
@@ -29,12 +28,12 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         controller = new HomeFragmentController(this.getActivity());
 
-        goButton = (Button) view.findViewById(R.id.go_button);
+        searchButton = (Button) view.findViewById(R.id.search_button);
         addListeners();
     }
 
     private void addListeners() {
-        goButton.setOnClickListener(new View.OnClickListener() {
+        searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 controller.onGoButtonPressed();

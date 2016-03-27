@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Vimudo.iml" filepath="$PROJECT_DIR$/Vimudo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Vimudo-Android.iml" filepath="$PROJECT_DIR$/Vimudo-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

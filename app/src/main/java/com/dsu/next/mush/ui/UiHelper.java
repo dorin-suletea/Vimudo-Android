@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.dsu.next.mush.R;
 
@@ -15,16 +16,21 @@ public class UiHelper {
 
     public static void replaceCurrentFragment(Activity activity, Bundle params, Fragment newFragment,
                                               boolean addToStack, boolean animated) {
+
+        //was interrupted by close
+        if (activity==null){
+            return;
+        }
         newFragment.setArguments(params);
         FragmentTransaction transaction = activity.getFragmentManager().beginTransaction();
 
-
         if (animated) {
-            transaction.setCustomAnimations(R.anim.slide_from_right, R.anim.slide_to_left,0,0);
+            transaction.setCustomAnimations(R.anim.slide_from_right, R.anim.slide_to_left, 0, 0);
         }
 
         transaction.replace(R.id.fragment_place, newFragment);
         if (addToStack) {
+            Log.d("=!=","Add to stack");
             transaction.addToBackStack(null);
         }
         transaction.commit();

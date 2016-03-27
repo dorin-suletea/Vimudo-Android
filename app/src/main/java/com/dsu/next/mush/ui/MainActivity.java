@@ -1,11 +1,15 @@
 package com.dsu.next.mush.ui;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.dsu.next.mush.R;
+
+import model.VimudoConstants;
 
 public class MainActivity extends Activity {
 
@@ -14,7 +18,19 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a_activity);
 
-        UiHelper.replaceCurrentFragment(this, new Bundle(), new SplashFragment(), false, false);
+        //was launched upon share from other activities eg youtube?
+        Intent intent = getIntent();
+        if (intent.getExtras() != null && getIntent().getStringExtra(Intent.EXTRA_TEXT) != null) {
+            //yes : pass the link to main fragment and start it
+            String url = getIntent().getStringExtra(Intent.EXTRA_TEXT);
+            Log.d("!=", "Sending url to main fragment " + url);
+            Bundle bundle = new Bundle();
+            bundle.putString(VimudoConstants.INTENT_LINK_KEY, url);
+            UiHelper.replaceCurrentFragment(this, bundle, new HomeFragment(), true, true);
+        } else {
+            //no : go via splash
+            UiHelper.replaceCurrentFragment(this, new Bundle(), new SplashFragment(), false, false);
+        }
 
     }
 

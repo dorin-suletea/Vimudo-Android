@@ -24,7 +24,7 @@ public class SplashFragment extends Fragment {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                UiHelper.replaceCurrentFragment(SplashFragment.this.getActivity(), new Bundle(), new HomeFragment(), true, true);
+                UiHelper.replaceCurrentFragment(SplashFragment.this.getActivity(), new Bundle(), new HomeFragment(), false, true);
             }
         }, UiHelper.SPLASH_DURATION);
     }
